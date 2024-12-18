@@ -51,16 +51,16 @@ class ChatMessage(BaseModel):
 
 class ChatCompletionRequest(BaseModel):
     model: Literal[
-        "VILA1.5-3B",
-        "VILA1.5-3B-AWQ",
-        "VILA1.5-3B-S2",
-        "VILA1.5-3B-S2-AWQ",
-        "Llama-3-VILA1.5-8B",
-        "Llama-3-VILA1.5-8B-AWQ",
-        "VILA1.5-13B",
+        "VILA1.5-3b",
+        "VILA1.5-3b-AWQ",
+        "VILA1.5-3b-S2",
+        "VILA1.5-3b-S2-AWQ",
+        "Llama-3-VILA1.5-8b",
+        "Llama-3-VILA1.5-8b-AWQ",
+        "VILA1.5-13b",
         "VILA1.5-13B-AWQ",
-        "VILA1.5-40B",
-        "VILA1.5-40B-AWQ",
+        "VILA1.5-40b",
+        "VILA1.5-40b-AWQ",
     ]
     messages: List[ChatMessage]
     max_tokens: Optional[int] = 512
